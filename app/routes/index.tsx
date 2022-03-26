@@ -17,14 +17,14 @@ export default function Index() {
 	let { currentLocation } = useLoaderData();
 
 	return (
-		<main>
-			<h1>Geolocation</h1>
+		<main className="container mx-auto px-4 py-8">
+			<h1 className="text-2xl text-orange-500">Geolocation</h1>
 
 			<p>
 				Show localized content based on information avaliable in the <code>Request.cf</code> object.
 			</p>
 
-			<pre>{JSON.stringify(currentLocation, null, 2)}</pre>
+			<pre className="mt-4">{JSON.stringify(currentLocation, null, 2)}</pre>
 		</main>
 	);
 }
